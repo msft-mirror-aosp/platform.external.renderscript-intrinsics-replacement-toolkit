@@ -83,6 +83,7 @@ cc_library_static {
         },
         arm: {
             cflags: [
+                "-DARCH_ARM_HAVE_NEON",
                 "-DARCH_ARM_HAVE_VFP",
                 "-DARCH_ARM_USE_INTRINSICS",
             ],
@@ -95,12 +96,6 @@ cc_library_static {
                 "Resize_neon.S",
                 "YuvToRgb_neon.S",
             ],
-            asflags: ["-mfpu=neon"],
-            neon: {
-                cflags: [
-                    "-DARCH_ARM_HAVE_NEON",
-                ],
-            },
         },
     },
 }
