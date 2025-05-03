@@ -17,6 +17,7 @@
 #include "TaskProcessor.h"
 
 #include <cassert>
+#include <functional>
 #include <sys/prctl.h>
 
 #include "RenderScriptToolkit.h"
