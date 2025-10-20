@@ -41,7 +41,7 @@ android_library {
 android_app {
     name: "renderscript_toolkit_test_app",
     sdk_version: "current",
-    min_sdk_version: "21",
+    min_sdk_version: "23",
     srcs: ["test-app/src/main/java/**/*.kt"],
     jni_libs: ["librenderscript-toolkit"],
     manifest: "test-app/src/main/AndroidManifest.xml",
