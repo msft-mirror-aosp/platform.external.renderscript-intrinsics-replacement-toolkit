@@ -53,4 +53,7 @@ android_app {
         "renderscript_toolkit",
     ],
     use_embedded_native_libs: true,
+    lint: {
+        baseline_filename: "lint-baseline.xml",
+    },
 }
