@@ -48,7 +48,10 @@ cc_defaults {
 
 cc_library_static {
     name: "librenderscripttoolkit_native_static",
-    defaults: ["renderscripttoolkit_native_defaults"],
+    defaults: [
+        "renderscripttoolkit_native_defaults",
+        "no_bti",
+    ],
     srcs: [
         "Blend.cpp",
         "Blur.cpp",
@@ -102,7 +105,10 @@ cc_library_static {
 
 cc_library_shared {
     name: "librenderscript-toolkit",
-    defaults: ["renderscripttoolkit_native_defaults"],
+    defaults: [
+        "renderscripttoolkit_native_defaults",
+        "no_bti",
+    ],
     srcs: ["JniEntryPoints.cpp"],
     static_libs: [
         "librenderscripttoolkit_native_static",
